@@ -16,11 +16,15 @@ export default class LogIn extends Component{
           
           <Form>
             <Item floatingLabel last>
-              <Label style={styles.titleW2} >Username</Label>
+              <Label>
+                <Text style={styles.titleW2}>Username </Text>
+              </Label>
               <Input />
             </Item>
             <Item floatingLabel last>
-              <Label style={styles.titleW2} >Password</Label>
+              <Label>
+                <Text style={styles.titleW2} > Password </Text>
+              </Label>
               <Input />
             </Item>
           </Form>
@@ -29,8 +33,8 @@ export default class LogIn extends Component{
             <Text style={{color:'#21ccc4', fontSize: 15}}> Log In </Text>
           </TouchableHighlight>
 
-          <TouchableHighlight style={styles.boton2} >
-            <Text style={{color:'#21ccc4', fontSize: 15}} onPress={(this.onSignIn.bind(this))}> Sign In </Text>
+          <TouchableHighlight style={styles.boton2} onPress={(this.onSignIn.bind(this))}>
+            <Text style={{color:'#21ccc4', fontSize: 15}}> Sign In </Text>
           </TouchableHighlight>         
 
       </View>

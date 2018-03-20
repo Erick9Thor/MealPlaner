@@ -16,11 +16,11 @@ import SignIn from './src/components/register/UserDetails'
 export default class App extends Component{
   render() {
       return  <Router>
-              <Scene key="root" direction="vertical" hideNavBar={true}>
-                <Scene key="LogIn" component={LogIn} title="Login" initial={true} />
-                <Scene key="SignIn" component={SignIn} title="Sign"/>
-              </Scene>
-            </Router>
+                <Scene key="root" direction="vertical" hideNavBar={true}>
+                  <Scene key="LogIn" component={LogIn} title="Login" initial={true} />
+                  <Scene key="SignIn" component={SignIn} title="Sign"/>
+                </Scene>
+              </Router>
   }
 }
 
