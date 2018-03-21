@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Image, TouchableHighlight, StatusBar} from 'react-native';
-import { Container, Header, Content, Card, CardItem, Text, Body } from 'native-base';
+import { StyleSheet, View, Image, TouchableHighlight, StatusBar, Text} from 'react-native';
 
 
 export default class SignIn extends Component {
   render() {
     return (
         <View style={styles.container}>
+
           <StatusBar backgroundColor='#343f4b' barStyle="light-content" />
-          <Text>Register</Text>
+
+          <Text style={styles.titleW}>Register</Text>
+
+          <Text style={styles.titleW}>Progress Bar </Text>
+
+            <View style={styles.square}>
+            
+            
+
+            </View>
+
+
         </View>
     );
   }
@@ -19,15 +30,19 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#21ccc4',
   },
-  boton:{
-    width:300,
-    height: 40,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 60,
-    marginBottom: 10,
+  square: {
+    width: 350,
+    height: 420,
     borderRadius: 20,
-    marginLeft: 50
+    backgroundColor: 'white',
+    marginTop: 50,
+    marginLeft: 30,
+    
+  },
+  titleW:{
+    textAlign: 'center',
+    color: 'white',
+    fontSize: 30,
+    marginTop: 10,
   },
 });
